@@ -1,0 +1,1602 @@
+/* Подключение шрифта Gilroy */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Fonts/Gilroy-ExtraBold.eot');
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+        url('../Fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Gilroy-ExtraBold.woff') format('woff'),
+        url('../Fonts/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Fonts/Gilroy-Heavy.eot');
+    src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
+        url('../Fonts/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Gilroy-Heavy.woff') format('woff'),
+        url('../Fonts/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Fonts/Gilroy-SemiBold.eot');
+    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
+        url('../Fonts/Gilroy-SemiBold.eot') format('embedded-opentype'),
+        url('../Fonts/Gilroy-SemiBold.woff') format('woff'),
+        url('../Fonts/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Fonts/Gilroy-Light.eot');
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+        url('../Fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Gilroy-Light.woff') format('woff'),
+        url('../Fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Fonts/Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('../Fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Gilroy-Regular.woff') format('woff'),
+        url('../Fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Fonts/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../Fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Gilroy-Medium.woff') format('woff'),
+        url('../Fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Fonts/Gilroy-UltraLight.eot');
+    src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'),
+        url('../Fonts/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Gilroy-UltraLight.woff') format('woff'),
+        url('../Fonts/Gilroy-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Fonts/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('../Fonts/Gilroy-Bold.eot') format('embedded-opentype'),
+        url('../Fonts/Gilroy-Bold.woff') format('woff'),
+        url('../Fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Fonts/Gilroy-Thin.eot');
+    src: local('Gilroy Thin'), local('Gilroy-Thin'),
+        url('../Fonts/Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Gilroy-Thin.woff') format('woff'),
+        url('../Fonts/Gilroy-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Fonts/Gilroy-Black.eot');
+    src: local('Gilroy Black'), local('Gilroy-Black'),
+        url('../Fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Gilroy-Black.woff') format('woff'),
+        url('../Fonts/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+/* Общие указания к сайту и сброс базовых стилей */
+* {
+    font-family: 'Gilroy', sans-serif;
+    margin: 0;
+}  
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+/* Начало шапки сайта */
+header {
+    background-color: #ffff;
+    /* padding: 39px auto 33px; */
+}
+.header-wrapper {
+    max-width: 1290px;
+    margin: 0 auto;            /* Делаем чтобы контент всегда центровался независимо от экрана*/
+    padding-top: 30px;
+    padding-bottom: 31px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;                      /* Делаем так чтобы при переполнении строки текст не наезжал дркг на дркга а переносился */
+    align-items: center;
+}
+.header-logo {
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-logo :nth-child(2){
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #099DBA;
+    text-decoration: none;
+    /* padding: 54px 60px 58px 19px;  */
+}
+.adress {
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.map-pin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.map-pin :nth-child(1) {
+    height: 22px; 
+    width: 20px;
+    margin-right: 7px;
+}
+.map-pin :nth-child(2) {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #099DBA;
+}
+.adress .adress-text {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #474551;
+}
+.working-hours {
+    display: flex;
+    flex-direction: column;
+}
+.clock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.clock :nth-child(1) {
+    height: 22px; 
+    width: 22px;
+    margin-right: 8px;
+}
+.clock :nth-child(2) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #099DBA;
+}
+.working-hours .time {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #474551;
+}
+.massangers {
+    margin-right: 60px;
+    margin-left: 226px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.massangers :first-child {
+    height: 28px; 
+    width: 28px;
+}
+.massangers :last-child {
+    height: 28px; 
+    width: 28px;
+    margin-left: 8px;
+}
+.numbers-fact {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.025em;
+    color: #474551;
+}
+.call-me {
+    margin-top: 2px;
+    float: right;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #099DBA;
+    background-color: #ffff;
+    border: none;
+}
+.call-me:hover {
+    color: #0688a2;
+    font-size: 18px;
+}
+/* Конец шапки сайта */
+
+/* Всплывающее окно для обратной связи */
+#feedback-window-in-header-wrapper,
+#appointment-window-in-first-block-wrapper,
+#appointment-window-in-second-block-wrapper,
+#appointment-window-in-fourth-block-wrapper,
+#appointment-window-in-fourth-block-wrapper-1,
+#appointment-window-in-fourth-block-wrapper-2,
+#appointment-window-in-fourth-block-wrapper-3,
+#appointment-window-in-fourth-block-wrapper-4,
+#appointment-window-in-fourth-block-wrapper-5 {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#feedback-window-in-header-wrapper.active,
+#appointment-window-in-first-block-wrapper.active,
+#appointment-window-in-second-block-wrapper.active,
+#appointment-window-in-fourth-block-wrapper.active,
+#appointment-window-in-fourth-block-wrapper-1.active,
+#appointment-window-in-fourth-block-wrapper-2.active,
+#appointment-window-in-fourth-block-wrapper-3.active,
+#appointment-window-in-fourth-block-wrapper-4.active,
+#appointment-window-in-fourth-block-wrapper-5.active  {
+    display: block;
+}
+#feedback-window-in-header-overlay,
+#appointment-window-in-first-block-overlay,
+#appointment-window-in-second-block-overlay,
+#appointment-window-in-fourth-block-overlay,
+#appointment-window-in-fourth-block-overlay-1,
+#appointment-window-in-fourth-block-overlay-2,
+#appointment-window-in-fourth-block-overlay-3,
+#appointment-window-in-fourth-block-overlay-4,
+#appointment-window-in-fourth-block-overlay-5 {                 
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #F3FEFE;
+    opacity: 0.5;
+}
+#feedback-window-in-header,
+#appointment-window-in-first-block,
+#appointment-window-in-second-block,
+#appointment-window-in-fourth-block,
+#appointment-window-in-fourth-block-1,
+#appointment-window-in-fourth-block-2,
+#appointment-window-in-fourth-block-3,
+#appointment-window-in-fourth-block-4,
+#appointment-window-in-fourth-block-5 {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 480px;
+    height: 340px;
+    z-index: 2;
+    border: none;
+    border-radius: 20px;
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    background-color: #F3FEFE;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#feedback-window-in-header #btn-in-feedback-window-close,
+#appointment-window-in-first-block #btn-close-in-appointment-window-in-first-block,
+#appointment-window-in-second-block #btn-close-in-appointment-window-in-second-block,
+#appointment-window-in-fourth-block #btn-close-in-appointment-window-in-fourth-block,
+#appointment-window-in-fourth-block-1 #btn-close-in-appointment-window-in-fourth-block-1,
+#appointment-window-in-fourth-block-2 #btn-close-in-appointment-window-in-fourth-block-2,
+#appointment-window-in-fourth-block-3 #btn-close-in-appointment-window-in-fourth-block-3,
+#appointment-window-in-fourth-block-4 #btn-close-in-appointment-window-in-fourth-block-4,
+#appointment-window-in-fourth-block-5 #btn-close-in-appointment-window-in-fourth-block-5 {           /* Кнопка крестик закрытие окошка*/
+    position: absolute;
+    background: none;
+    border: none;
+    width: 42px;
+    height: 42px;
+    left: 420px;
+    /* top: 10px; */
+    opacity: 0.3;
+}
+#feedback-window-in-header #btn-in-feedback-window-close:hover, 
+#appointment-window-in-first-block #btn-close-in-appointment-window-in-first-block:hover,
+#appointment-window-in-second-block #btn-close-in-appointment-window-in-second-block:hover,
+#appointment-window-in-fourth-block #btn-close-in-appointment-window-in-fourth-block:hover,
+#appointment-window-in-fourth-block-1 #btn-close-in-appointment-window-in-fourth-block-1:hover,
+#appointment-window-in-fourth-block-2 #btn-close-in-appointment-window-in-fourth-block-2:hover,
+#appointment-window-in-fourth-block-3 #btn-close-in-appointment-window-in-fourth-block-3:hover,
+#appointment-window-in-fourth-block-4 #btn-close-in-appointment-window-in-fourth-block-4:hover,
+#appointment-window-in-fourth-block-5 #btn-close-in-appointment-window-in-fourth-block-5:hover {
+    opacity: 1;
+}
+#feedback-window-in-header #btn-in-feedback-window-close:before, #feedback-window-in-header #btn-in-feedback-window-close:after, 
+#appointment-window-in-first-block #btn-close-in-appointment-window-in-first-block:before, #appointment-window-in-first-block #btn-close-in-appointment-window-in-first-block:after,
+#appointment-window-in-second-block #btn-close-in-appointment-window-in-second-block:before, #appointment-window-in-second-block #btn-close-in-appointment-window-in-second-block:after,
+#appointment-window-in-fourth-block #btn-close-in-appointment-window-in-fourth-block:before, #appointment-window-in-fourth-block #btn-close-in-appointment-window-in-fourth-block:after,
+#appointment-window-in-fourth-block-1 #btn-close-in-appointment-window-in-fourth-block-1:before, #appointment-window-in-fourth-block-1 #btn-close-in-appointment-window-in-fourth-block-1:after,
+#appointment-window-in-fourth-block-2 #btn-close-in-appointment-window-in-fourth-block-2:before, #appointment-window-in-fourth-block-2 #btn-close-in-appointment-window-in-fourth-block-2:after,
+#appointment-window-in-fourth-block-3 #btn-close-in-appointment-window-in-fourth-block-3:before, #appointment-window-in-fourth-block-3 #btn-close-in-appointment-window-in-fourth-block-3:after,
+#appointment-window-in-fourth-block-4 #btn-close-in-appointment-window-in-fourth-block-4:before, #appointment-window-in-fourth-block-4 #btn-close-in-appointment-window-in-fourth-block-4:after,
+#appointment-window-in-fourth-block-5 #btn-close-in-appointment-window-in-fourth-block-5:before, #appointment-window-in-fourth-block-5 #btn-close-in-appointment-window-in-fourth-block-5:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+#feedback-window-in-header #btn-in-feedback-window-close:before,
+#appointment-window-in-first-block #btn-close-in-appointment-window-in-first-block:before,
+#appointment-window-in-second-block #btn-close-in-appointment-window-in-second-block:before,
+#appointment-window-in-fourth-block #btn-close-in-appointment-window-in-fourth-block:before,
+#appointment-window-in-fourth-block-1 #btn-close-in-appointment-window-in-fourth-block-1:before,
+#appointment-window-in-fourth-block-2 #btn-close-in-appointment-window-in-fourth-block-2:before,
+#appointment-window-in-fourth-block-3 #btn-close-in-appointment-window-in-fourth-block-3:before,
+#appointment-window-in-fourth-block-4 #btn-close-in-appointment-window-in-fourth-block-4:before,
+#appointment-window-in-fourth-block-5 #btn-close-in-appointment-window-in-fourth-block-5:before {
+    transform: rotate(45deg);
+}
+#feedback-window-in-header #btn-in-feedback-window-close:after,
+#appointment-window-in-first-block #btn-close-in-appointment-window-in-first-block:after,
+#appointment-window-in-second-block #btn-close-in-appointment-window-in-second-block:after,
+#appointment-window-in-fourth-block #btn-close-in-appointment-window-in-fourth-block:after,
+#appointment-window-in-fourth-block-1 #btn-close-in-appointment-window-in-fourth-block-1:after,
+#appointment-window-in-fourth-block-2 #btn-close-in-appointment-window-in-fourth-block-2:after,
+#appointment-window-in-fourth-block-3 #btn-close-in-appointment-window-in-fourth-block-3:after,
+#appointment-window-in-fourth-block-4 #btn-close-in-appointment-window-in-fourth-block-4:after,
+#appointment-window-in-fourth-block-5 #btn-close-in-appointment-window-in-fourth-block-5:after {
+    transform: rotate(-45deg);
+}
+#feedback-window-in-header .content-in-header-feedback-window,
+#appointment-window-in-first-block .content-in-first-block-appointment-window,
+#appointment-window-in-second-block .content-in-second-block-appointment-window,
+#appointment-window-in-fourth-block .content-in-fourth-block-appointment-window,
+#appointment-window-in-fourth-block-1 .content-in-fourth-block-appointment-window-1,
+#appointment-window-in-fourth-block-2 .content-in-fourth-block-appointment-window-2,
+#appointment-window-in-fourth-block-3 .content-in-fourth-block-appointment-window-3,
+#appointment-window-in-fourth-block-4 .content-in-fourth-block-appointment-window-4,
+#appointment-window-in-fourth-block-5 .content-in-fourth-block-appointment-window-5 {
+    max-width: 350px;
+    margin-top: 30px;
+    margin-bottom: 28px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+    color: #474551;
+}
+#feedback-window-in-header form,
+#appointment-window-in-first-block form,
+#appointment-window-in-second-block form,
+#appointment-window-in-fourth-block form,
+#appointment-window-in-fourth-block-1 form,
+#appointment-window-in-fourth-block-2 form,
+#appointment-window-in-fourth-block-3 form,
+#appointment-window-in-fourth-block-4 form,
+#appointment-window-in-fourth-block-5 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form-for-user-name-in-header-feedback-window, #form-for-user-number-in-header-feedback-window, 
+#form-for-user-name-in-appointment-window-in-first-block, #form-for-user-number-in-appointment-window-in-first-block, 
+#form-for-user-name-in-appointment-window-in-second-block, #form-for-user-number-in-appointment-window-in-second-block,
+#form-for-user-name-in-appointment-window-in-fourth-block, #form-for-user-number-in-appointment-window-in-fourth-block,
+#form-for-user-name-in-appointment-window-in-fourth-block-1, #form-for-user-number-in-appointment-window-in-fourth-block-1,
+#form-for-user-name-in-appointment-window-in-fourth-block-2, #form-for-user-number-in-appointment-window-in-fourth-block-2,
+#form-for-user-name-in-appointment-window-in-fourth-block-3, #form-for-user-number-in-appointment-window-in-fourth-block-3,
+#form-for-user-name-in-appointment-window-in-fourth-block-4, #form-for-user-number-in-appointment-window-in-fourth-block-4,
+#form-for-user-name-in-appointment-window-in-fourth-block-5, #form-for-user-number-in-appointment-window-in-fourth-block-5 {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 2px solid #BDF8F9;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+#form-for-user-name-in-header-feedback-window::-webkit-input-placeholder, #form-for-user-number-in-header-feedback-window::-webkit-input-placeholder, 
+#form-for-user-name-in-appointment-window-in-first-block::-webkit-input-placeholder, #form-for-user-number-in-appointment-window-in-first-block::-webkit-input-placeholder,
+#form-for-user-name-in-appointment-window-in-second-block::-webkit-input-placeholder, #form-for-user-number-in-appointment-window-in-second-block::-webkit-input-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block::-webkit-input-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block::-webkit-input-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block-1::-webkit-input-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block-1::-webkit-input-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block-2::-webkit-input-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block-2::-webkit-input-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block-3::-webkit-input-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block-3::-webkit-input-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block-4::-webkit-input-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block-4::-webkit-input-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block-5::-webkit-input-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block-5::-webkit-input-placeholder {
+    color: #BDF8F9;
+} 
+#form-for-user-name-in-header-feedback-window::-moz-placeholder, #form-for-user-number-in-header-feedback-window::-moz-placeholder, 
+#form-for-user-name-in-appointment-window-in-first-block::-moz-placeholder, #form-for-user-number-in-appointment-window-in-first-block::-moz-placeholder,
+#form-for-user-name-in-appointment-window-in-second-block::-moz-placeholder, #form-for-user-number-in-appointment-window-in-second-block::-moz-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block::-moz-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block::-moz-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block-1::-moz-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block-1::-moz-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block-2::-moz-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block-2::-moz-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block-3::-moz-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block-3::-moz-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block-4::-moz-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block-4::-moz-placeholder,
+#form-for-user-name-in-appointment-window-in-fourth-block-5::-moz-placeholder, #form-for-user-number-in-appointment-window-in-fourth-block-5::-moz-placeholder {
+    color: #BDF8F9;
+}
+#btn-call-me-in-header-feedback-window, 
+#btn-appointment-me-in-appointment-window-in-first-block, 
+#btn-appointment-me-in-appointment-window-in-second-block,
+#btn-appointment-me-in-appointment-window-in-fourth-block,
+#btn-appointment-me-in-appointment-window-in-fourth-block-1,
+#btn-appointment-me-in-appointment-window-in-fourth-block-2,
+#btn-appointment-me-in-appointment-window-in-fourth-block-3,
+#btn-appointment-me-in-appointment-window-in-fourth-block-4,
+#btn-appointment-me-in-appointment-window-in-fourth-block-5 {
+    width: 300px;
+    height: 40px;
+    background: #046DBF;
+    border-width: 0;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+main {
+    background-color: #ffff;
+}
+
+/* Начало первого блока контента */
+.first-block-conteiner {
+    background-image: url(../Image/IMG/Backgraund-1.png);
+    background-size: 100%;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+
+}
+.first-block {
+    max-width: 1290px;
+    margin: 0 auto;            /* Делаем чтобы контент всегда центровался независимо от экрана*/
+}
+.first-block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;                      /* Делаем так чтобы при переполнении строки текст не наезжал дркг на дркга а переносился */
+    align-items: flex-start;              /* Выравниваем все элементы по левому краю контейнера */
+}
+.first-block-text :nth-child(1) {
+    margin: 92px 0 30px;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 120%;
+    color: #474551;
+}
+.first-block-text :nth-child(2) {
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #099DBA;
+}
+.first-block-text :nth-child(3) {
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: #474551;
+}
+.first-block-text .accent{
+    color: #33D9DA;
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+}
+/* Кнопка записи на приём */
+.first-block-text :nth-child(4) {
+    margin-bottom: 82px;
+    /* Описание оболочки кнопки */
+    width: 190px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #046DBF;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    border-style: none;
+    /* Описание текста кнопки */
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+    transition: all 0.2s ease; 
+    outline: none;
+}
+.first-block-text .Make-an-appointment:hover {
+    box-shadow: 5px 5px 1px gray;
+}
+.first-block-text .Make-an-appointment:active {
+    box-shadow: none;
+    transform: translateY(5px) translateX(5px);
+}
+/* Вынесенные блоки */
+.first-block-components {
+    width: 1290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Component-1, .Component-2, .Component-3 {
+    width: 410px;
+    height: 150px;
+    background: #F3FEFE;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 0 5 10px rgba(0,0,0,0.5);
+}
+.Component-1 .Calendar, .Component-2 .UserGear, .Component-3 .Fingerprint {
+    width: 63px;
+    height: 63px;
+    margin: auto 30px auto 20px;
+}
+.Component-1 .first-block-components-content-1, .Component-2 .first-block-components-content-2, .Component-3 .first-block-components-content-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.first-block-components-content-2 :first-child, .first-block-components-content-1 :first-child, .first-block-components-content-3 :first-child {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #099DBA;
+}
+.first-block-components-content-2 :last-child, .first-block-components-content-1 :last-child, .first-block-components-content-3 :last-child {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #000000;
+}
+/* Конец первого блока контента */
+
+/* Начало второго блока контента */
+.second-block-conteiner {
+    max-width: 1290px;
+    margin: 128px auto 90px;            /* Делаем чтобы контент всегда центровался независимо от экрана*/
+    text-align: center;
+}
+.second-block-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.Header-of-the-second-block {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 120%;
+    text-align: center;
+    color: #474551;
+    margin-bottom: 30px;
+}
+.First-paragraph-of-the-second-block {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    text-align: center;
+    color: #099DBA;
+    margin-bottom: 60px;
+}
+.second-block-components {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.component-1-second-block-components, .component-2-second-block-components, .component-3-second-block-components {
+    width: 410px;
+    height: 422px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.component-1-second-block-components :nth-child(2), 
+.component-2-second-block-components :nth-child(2), 
+.component-3-second-block-components :nth-child(2) {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #474551;
+}
+.component-1-second-block-components :nth-child(3), 
+.component-2-second-block-components :nth-child(3), 
+.component-3-second-block-components :nth-child(3) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #474551;
+}
+.big-button-Make-an-appointment {     /*Кнопка записи на прием*/
+    margin: auto;
+    /* Описание оболочки кнопки */
+    width: 404px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #046DBF;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    border-style: none;
+    /* Описание текста кнопки */
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+    transition: all 0.2s ease; 
+    outline: none;
+}
+.big-button-Make-an-appointment:hover {
+    box-shadow: 5px 5px 1px gray;
+}
+.big-button-Make-an-appointment:active {
+    box-shadow: none;
+    transform: translateY(5px) translateX(5px);
+}
+/* Конец второго блока контента */
+
+/* Начало третьего блока контента "АКЦИИ" */
+.therd-block-conteiner {
+    max-width: 1370px;          /* Область для контента шире, так как нужно место под стрелочки карусели */
+    margin: 90px auto 90px;            /* Делаем чтобы контент всегда центровался независимо от экрана + отступы от соседних блоков*/
+    text-align: center;
+}
+.therd-block-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.Header-of-the-therd-block {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 120%;
+    text-align: center;
+    color: #474551;
+}
+.First-paragraph-of-the-therd-block {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    text-align: center;
+    color: #099DBA;
+}
+.accent-text-in-therd-block-text, .accent-text-in-fourth-block-text, .accent-text-fifth-block {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 140%;
+    text-align: center;
+    color: #046DBF;
+}
+.therd-block-components {
+    width: 1370px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn-prev, .btn-next {
+    position: absolute;
+    height: 100%;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 0;
+    width: 40px;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+.btn-next {
+    left: auto;
+    right: 0;
+}
+.btn-prev:hover, .btn-next:hover {
+    opacity: 0.6;
+}
+
+.btn-prev img, .btn-next img {
+    width: 100%;
+    height: 100%;
+}
+.therd-block-slider {
+    max-width: 1370px;
+    width: 100%;
+    /* height: 490px; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.slide.active{
+    display: block;
+}
+.content-slide {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Делаем правильное оформление карточек с кнопками в слайдере */
+.slide img {
+    width: 410px;
+    height: 410px;
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    border-radius: 15px;
+}
+.card {
+    position: relative;
+    width: 50%;
+}
+.card img {
+    width: 410px;
+    height: auto;
+}
+.card .btn-in-card {                                   /* Описание кнопочек "Участвовать" в карточкаx акций */
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid #099DBA;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    Width: 181px;
+    Height: 40px;
+
+    position: absolute;
+    top: 359px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #099DBA;
+}
+.card .btn-in-card:hover {              /* Изменение прозрачности при наведении */
+    opacity: 0.6;
+}
+
+
+/* Добавляем всплывающее окошко для участия в акции или записи*/
+#wrapper-modal, #wrapper-modal-1, #wrapper-modal-2, #wrapper-modal-3, #wrapper-modal-4, #wrapper-modal-5 {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#wrapper-modal.active, #wrapper-modal-1.active, #wrapper-modal-2.active, #wrapper-modal-3.active, #wrapper-modal-4.active, #wrapper-modal-5.active {
+    display: block;
+}
+#overlay, #overlay-1, #overlay-2, #overlay-3, #overlay-4, #overlay-5 {                 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #F3FEFE;
+    opacity: 0.5;
+}
+#modal-window, #modal-window-1, #modal-window-2,
+#modal-window-3, #modal-window-4, #modal-window-5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 410px;
+    height: 380px;
+    z-index: 2;
+    border: none;
+    border-radius: 20px;
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    background-color: #F3FEFE;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#modal-window #btn-in-madal-window-close, #modal-window-1 #btn-in-madal-window-close-1, #modal-window-2 #btn-in-madal-window-close-2,
+#modal-window-3 #btn-in-madal-window-close-3, #modal-window-4 #btn-in-madal-window-close-4, #modal-window-5 #btn-in-madal-window-close-5 {           /* Кнопка крестик закрытие окошка*/
+    position: absolute;
+    background: none;
+    border: none;
+    width: 42px;
+    height: 42px;
+    left: 360px;
+    /* top: 10px; */
+    opacity: 0.3;
+}
+#modal-window #btn-in-madal-window-close:hover, #modal-window-1 #btn-in-madal-window-close-1:hover, 
+#modal-window-2 #btn-in-madal-window-close-2:hover, #modal-window-3 #btn-in-madal-window-close-3:hover, #modal-window-4 #btn-in-madal-window-close-4:hover, 
+#modal-window-5 #btn-in-madal-window-close-5:hover {
+    opacity: 1;
+}
+#modal-window #btn-in-madal-window-close:before, #modal-window #btn-in-madal-window-close:after,
+#modal-window-1 #btn-in-madal-window-close-1:before, #modal-window-1 #btn-in-madal-window-close-1:after, 
+#modal-window-2 #btn-in-madal-window-close-2:before, #modal-window-2 #btn-in-madal-window-close-2:after,
+#modal-window-3 #btn-in-madal-window-close-3:before, #modal-window-3 #btn-in-madal-window-close-3:after,
+#modal-window-4 #btn-in-madal-window-close-4:before, #modal-window-4 #btn-in-madal-window-close-4:after, 
+#modal-window-5 #btn-in-madal-window-close-5:before, #modal-window-5 #btn-in-madal-window-close-5:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+#modal-window #btn-in-madal-window-close:before, 
+#modal-window-1 #btn-in-madal-window-close-1:before,
+#modal-window-2 #btn-in-madal-window-close-2:before,
+#modal-window-3 #btn-in-madal-window-close-3:before, 
+#modal-window-4 #btn-in-madal-window-close-4:before,
+#modal-window-5 #btn-in-madal-window-close-5:before {
+    transform: rotate(45deg);
+}
+#modal-window #btn-in-madal-window-close:after, 
+#modal-window-1 #btn-in-madal-window-close-1:after,
+#modal-window-2 #btn-in-madal-window-close-2:after, 
+#modal-window-3 #btn-in-madal-window-close-3:after,
+#modal-window-4 #btn-in-madal-window-close-4:after,
+#modal-window-5 #btn-in-madal-window-close-5:after {
+    transform: rotate(-45deg);
+}
+#modal-window .content-in-modal-window, 
+#modal-window-1 .content-in-modal-window-1,
+#modal-window-2 .content-in-modal-window-2, 
+#modal-window-3 .content-in-modal-window-3,
+#modal-window-4 .content-in-modal-window-4, 
+#modal-window-5 .content-in-modal-window-5 {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    text-align: center;
+    color: #099DBA;
+}
+#modal-window #btn-follow-to-vk,
+#modal-window-1 #btn-follow-to-vk-1,
+#modal-window-2 #btn-follow-to-vk-2,
+#modal-window-3 #btn-follow-to-vk-3,
+#modal-window-4 #btn-follow-to-vk-4,
+#modal-window-5 #btn-follow-to-vk-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid #099DBA;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+}
+#modal-window #btn-follow-to-vk:hover, 
+#modal-window-1 #btn-follow-to-vk-1:hover,
+#modal-window-2 #btn-follow-to-vk-2:hover, 
+#modal-window-3 #btn-follow-to-vk-3:hover,
+#modal-window-4 #btn-follow-to-vk-4:hover, 
+#modal-window-5 #btn-follow-to-vk-5:hover {
+    opacity: 0.6;
+}
+#modal-window #btn-follow-to-vk img, 
+#modal-window-1 #btn-follow-to-vk-1 img,
+#modal-window-2 #btn-follow-to-vk-2 img, 
+#modal-window-3 #btn-follow-to-vk-3 img,
+#modal-window-4 #btn-follow-to-vk-4 img, 
+#modal-window-5 #btn-follow-to-vk-5 img {
+    margin-left: 32px;
+    margin-right: 21px;
+    width: 28px;
+    height: 28px;
+}
+#modal-window #btn-follow-to-vk p, 
+#modal-window-1 #btn-follow-to-vk-1 p,
+#modal-window-2 #btn-follow-to-vk-2 p, 
+#modal-window-3 #btn-follow-to-vk-3 p,
+#modal-window-4 #btn-follow-to-vk-4 p, 
+#modal-window-5 #btn-follow-to-vk-5 p {
+    margin-right: 80px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #099DBA;
+}
+#modal-window .ask-at-massenger, 
+#modal-window-1 .ask-at-massenger-1,
+#modal-window-2 .ask-at-massenger-2, 
+#modal-window-3 .ask-at-massenger-3,
+#modal-window-4 .ask-at-massenger-4, 
+#modal-window-5 .ask-at-massenger-5 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#modal-window .ask-at-massenger img, 
+#modal-window-1 .ask-at-massenger-1 img,
+#modal-window-2 .ask-at-massenger-2 img, 
+#modal-window-3 .ask-at-massenger-3 img,
+#modal-window-4 .ask-at-massenger-4 img, 
+#modal-window-5 .ask-at-massenger-5 img {
+    width: 28px;
+    height: 28px;
+    margin-right: 9px;
+}
+#modal-window .ask-at-massenger p,
+#modal-window-1 .ask-at-massenger-1 p,
+#modal-window-2 .ask-at-massenger-2 p,
+#modal-window-3 .ask-at-massenger-3 p,
+#modal-window-4 .ask-at-massenger-4 p,
+#modal-window-5 .ask-at-massenger-5 p {
+    margin-left: 21px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #474551;
+}
+
+.dots-wrapper {                        /* Делаем точечки под слайдером */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.dot.active {
+    background-color: #33D9DA;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+.dots-wrapper span {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #BDF8F9; 
+    margin-right: 20px;
+    cursor: pointer;
+}
+.dots-wrapper span:last-child{
+    margin-right: 0;
+}
+/* Конец третьего блока */
+
+/* Начало четвертого блока */
+.fourth-block-conteiner {
+    max-width: 1290px;
+    margin: 0 auto;            /* Делаем чтобы контент всегда центровался независимо от экрана*/
+    text-align: center;
+}
+.fourth-block-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fourth-block-text h3 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 120%;
+    color: #474551;
+}
+.fourth-block-text p {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #099DBA;
+
+    margin: 30px auto 60px;
+}
+.fourth-block-components {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fourth-block-components .card-servic-in-fourth-block-components {
+    width: 630px;
+    height: 560px;
+    margin-bottom: 30px;
+
+    background: #F3FEFE;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-with-img-in-component-fourth-block {
+    position: relative;
+    width: 630px;
+    height: 560px;
+}
+.text-4-block-components-conteiner {
+    position: absolute;
+    width: 366px;
+    top: 60px;
+    left: 31px;
+    text-align: left;
+}
+.text-4-block-components-conteiner h5 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #099DBA;
+
+    margin: 0 auto 9px 0;
+}
+.text-4-block-components-conteiner .u {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #474551;
+}
+.text-with-img-in-component-fourth-block ul {
+    position: absolute;
+    top: 224px;
+    left: 31px;
+    margin: 0;
+    width: 395px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    color: #474551;
+}
+.text-with-img-in-component-fourth-block .img4-1 {
+    position: absolute;
+    top: 27px;
+    right: 2px;
+    width: 253px;
+    height: 385px;
+}
+.massangers-with-text-in-component-fourth-block {
+    display: flex;
+    align-items: center;
+}
+.massangers-with-text-in-component-fourth-block p {
+    margin-left: 26px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #474551;
+}
+.massangers-with-text-in-component-fourth-block :nth-child(1) {
+    margin-right: 4px;
+} 
+.buttons-in-component-fourth-block {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.btn-appointment-in-fourth-block {
+    width: 188px;
+    height: 40px;
+    margin-right: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid #099DBA;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #099DBA;
+
+    cursor: pointer;
+    transition: all 0.2s ease; 
+    outline: none;
+}
+.buttons-in-component-fourth-block .btn-appointment-in-fourth-block:hover {
+    box-shadow: 2px 2px 1px gray;
+}
+.buttons-in-component-fourth-block .btn-appointment-in-fourth-block:active {
+    box-shadow: none;
+    transform: translateY(3px) translateX(3px);
+}
+.btn-price-window-in-fourth-block {
+    width: 188px;
+    height: 40px;
+    background: #BDF8F9;
+    border: 2px solid #099DBA;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #099DBA;
+
+    cursor: pointer;
+    transition: all 0.2s ease; 
+    outline: none;
+}
+.buttons-in-component-fourth-block .btn-price-window-in-fourth-block:hover {
+    box-shadow: 2px 2px 1px gray;
+}
+.buttons-in-component-fourth-block .btn-price-window-in-fourth-block:active {
+    box-shadow: none;
+    transform: translateY(3px) translateX(3px);
+}
+/* Конец четвертого блока */
+
+/* Начало ПЯТОГО блока */
+.fifth-block-conteiner {
+    max-width: 1290px;
+    margin: 30px auto 90px;            /* Делаем чтобы контент всегда центровался независимо от экрана*/
+
+    background: #F3FEFE;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+.first-part-of-fifth-block {
+    display: flex;
+    margin: 60px 80px auto;
+}
+.content-1-first-part-of-fifth-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 547px;
+    text-align: flex-start;
+}
+.content-1-first-part-of-fifth-block p {
+    margin-bottom: 61px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #099DBA;
+}
+.content-1-first-part-of-fifth-block label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #099DBA;
+    margin-bottom: 10px;
+}
+#btn-price-window-in-fifth-block {
+    width: 190px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 2px solid #099DBA;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #099DBA;    
+    margin: 30px 0 36px;
+
+    cursor: pointer;
+    transition: all 0.2s ease; 
+    outline: none;
+}
+#btn-price-window-in-fifth-block:hover, 
+#btn-appointment-window-in-fifth-block:hover,
+#btn-choose-doctor-window-in-fifth-block:hover {
+    box-shadow: 2px 2px 1px gray;
+}
+#btn-price-window-in-fifth-block:active,
+#btn-appointment-window-in-fifth-block:active,
+#btn-choose-doctor-window-in-fifth-block:active {
+    box-shadow: none;
+    transform: translateY(3px) translateX(3px);
+}
+.content-2-first-part-of-fifth-block ul li {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    color: #474551;
+    padding-bottom: 15px;
+    margin-left: 21px;
+}
+.second-part-of-fifth-block {
+    display: flex;
+    background-image: url(../Image/IMG/bgr-img-5-block.png);
+    background-size: 100%;
+    background-size: cover;
+    border-radius: 0px 0px 20px 20px;
+}
+.second-part-of-fifth-block-wrapper {
+    margin: 60px 80px 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.second-part-of-fifth-block-wrapper .step1,
+.second-part-of-fifth-block-wrapper .step2,
+.second-part-of-fifth-block-wrapper .step3,
+.second-part-of-fifth-block-wrapper .step4 {
+    background: #BDF8F9;
+    border-radius: 20px;
+    Width: 770px;
+    Height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.second-part-of-fifth-block-wrapper .step2 {
+    margin-left: 110px;
+}
+.second-part-of-fifth-block-wrapper .step3 {
+    margin-left: 220px;
+}
+.second-part-of-fifth-block-wrapper .step4 {
+    margin-left: 330px;
+}
+.second-part-of-fifth-block-wrapper .step1 span,
+.second-part-of-fifth-block-wrapper .step2 span,
+.second-part-of-fifth-block-wrapper .step3 span,
+.second-part-of-fifth-block-wrapper .step4 span {
+    display: inline-block;
+    background: #FFFFFF;
+    color: #046DBF;
+    text-align: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+
+    
+    margin: 10px 0 10px 20px;
+    font-weight: 700;
+    font-size: 68px;
+}
+.second-part-of-fifth-block-wrapper .step1 p,
+.second-part-of-fifth-block-wrapper .step2 p,
+.second-part-of-fifth-block-wrapper .step3 p,
+.second-part-of-fifth-block-wrapper .step4 p {
+    margin: 18px 27px 18px 30px;
+    width: 593px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #474551;
+}
+.massangers-with-text-in-component-fifth-block {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+.massangers-with-text-in-component-fifth-block p {
+    margin-left: 26px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #474551;
+}
+.massangers-with-text-in-component-fifth-block :nth-child(1) {
+    margin-right: 4px;
+}
+.buttons-in-fifth-second-part-block {
+    display: flex;
+    margin-top: 28px;
+}
+#btn-appointment-window-in-fifth-block {
+    width: 188px;
+    height: 37px;
+
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #099DBA;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    margin-right: 30px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #099DBA;
+
+    cursor: pointer;
+    transition: all 0.2s ease; 
+    outline: none;
+}
+#btn-choose-doctor-window-in-fifth-block {
+    width: 190px;
+    height: 37px;
+
+    background: #046DBF;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    border: none;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+    transition: all 0.2s ease; 
+    outline: none;
+}
+#btn-choose-doctor-window-in-fifth-block a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+/* Конец ПЯТОГО блока */
+
+/* Начало шестого блока */
+.sixth-block-conteiner {
+    max-width: 1310px;
+    margin: 0 auto 148px;            /* Делаем чтобы контент всегда центровался независимо от экрана*/
+}
+.sixth-block-text {
+    text-align: center;
+}
+.sixth-block-text h3 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 120%;
+    color: #474551;
+}
+.sixth-block-text p {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #099DBA;
+    margin: 30px auto auto;
+    width: 85%;
+    align-items: center;
+}
+.slider-and-card-wrapper {
+    display: flex;
+    /* position: relative; */
+    width: 1310px;
+    margin-top: 15px;
+}
+.cards-part #dr-saidov, 
+.cards-part #dr-anisimov, 
+.cards-part #dr-vardanyan, 
+.cards-part #dr-soha, 
+.cards-part #dr-ivanova, 
+.cards-part #dr-sinelshikova {
+    position: relative;
+    margin-top: 15px;
+    padding-top: 11px;
+}
+.cards-part #dr-saidov {
+    margin-top: 0;
+}
+.cards-part #dr-saidov img, 
+.cards-part #dr-anisimov img, 
+.cards-part #dr-sinelshikova img {
+    position: absolute;
+    bottom: 0;
+    left: 11px;
+}
+.cards-part #dr-vardanyan img {
+    position: absolute;
+    bottom: 0;
+    left: 29px;
+} 
+.cards-part #dr-soha img {
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+} 
+.cards-part #dr-ivanova img {
+    position: absolute;
+    bottom: 0;
+    left: 36px;
+}
+.cards-wrapper-with-content {
+    background-color: #F3FEFE;
+    border-radius: 20px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    width: 630px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.2s ease; 
+    outline: none;
+}
+.cards-wrapper-with-content:hover {
+    background-color:#BDF8F9;;
+}
+.cards-wrapper-with-content .dr-name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #474551;
+    margin-left: 190px;
+    margin-top: 34px;
+}
+.cards-wrapper-with-content .dr-position {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    color: #099DBA;
+    margin: 8px auto auto 190px;
+}
+.cards-wrapper-with-content .leading-specialist {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #474551;
+    margin-left: 10px;
+}
+/* Слфйдер с информацией о докторах */
+.sliders-part-wrapper {
+    position: relative;
+    
+}
+.sliders-part-wrapper #btn-prev-in-six-block, 
+.slider-and-card-wrapper #btn-next-in-six-block {
+    position: absolute;
+    top: 233px;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 0;
+    width: 40px;
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+.slider-and-card-wrapper #btn-next-in-six-block {
+    left: auto;
+    right: 0;
+}
+#btn-prev-in-six-block:hover, #btn-next-in-six-block:hover {
+    opacity: 0.6;
+}
+#btn-prev-in-six-block img, #btn-next-in-six-block img {
+    width: 100%;
+    height: 100%;
+}
+.sliders-part {
+    margin-left: 31px;
+    top: 0;
+}
+.slide-doc {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.slide-doc.active {
+    display: block;
+    position: absolute;
+    top: 11px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+
+    width: 630px;
+    height: 690px;
+
+    z-index: 1;
+}
+.text-content-in-six-block {
+    margin: 40px auto auto 30px;
+    display: flex;
+    flex-direction: column;
+}
+.dr-name-in-slide {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #474551;
+}
+.dr-position-in-slide {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    color: #099DBA;
+    margin-top: 11px;
+}
+.dr-saidov-option {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    color: #474551;
+}
+.info-space-about-doctor {
+    width: 320px;
+    height: 326px;
+    position: absolute;
+    left: 16px;
+    bottom: 13px;
+    padding: 16px 10px 12px 14px;
+
+    background-color: rgba(243, 254, 254, 0.8);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid #A8EAFF;
+}
+.info-space-about-doctor span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #099DBA;
+    margin: 0 0 20px;
+}
+.info-space-about-doctor p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #474551;
+    margin-top: 10px;
+}
+.dr-photo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.btn-appointment-in-six-block {
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid #099DBA;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    width: 188px;
+    height: 40px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #099DBA;
+}
+/* Конец шестого блока */
