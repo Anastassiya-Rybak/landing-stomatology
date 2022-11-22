@@ -1,4 +1,6 @@
 /* Подключение шрифта Gilroy */
+
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../Fonts/Gilroy-ExtraBold.eot');
@@ -103,6 +105,7 @@
 * {
     font-family: 'Gilroy', sans-serif;
     margin: 0;
+    padding: 0;
 }  
 html {
     box-sizing: border-box;
@@ -110,97 +113,103 @@ html {
 *, *::after, *::before {
     box-sizing: inherit;
 }
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+}
+.unvisible {
+    display: none;
+}
+.visible {
+    display: flex;
+}
 /* Начало шапки сайта */
 header {
     background-color: #ffff;
-    /* padding: 39px auto 33px; */
 }
 .header-wrapper {
-    max-width: 1290px;
-    margin: 0 auto;            /* Делаем чтобы контент всегда центровался независимо от экрана*/
-    padding-top: 30px;
-    padding-bottom: 31px;
+    padding: 21px 0 21px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;                      /* Делаем так чтобы при переполнении строки текст не наезжал дркг на дркга а переносился */
     align-items: center;
 }
 .header-logo {
-    margin-right: 60px;
+    max-width: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.header-logo :nth-child(2){
+.header-logo a {
+    display: flex;
+    align-items: center;
+}
+.header-logo a p {
     font-weight: 700;
     font-size: 20px;
     line-height: 120%;
     color: #099DBA;
-    text-decoration: none;
-    /* padding: 54px 60px 58px 19px;  */
 }
 .adress {
-    margin-right: 60px;
+    max-width: 20%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 .map-pin {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
-.map-pin :nth-child(1) {
+.map-pin img {
     height: 22px; 
     width: 20px;
     margin-right: 7px;
 }
-.map-pin :nth-child(2) {
-    margin-top: 0;
+.map-pin p {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: #099DBA;
 }
 .adress .adress-text {
-    margin-top: 10px;
+    margin-top: 5px;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 14px;
     color: #474551;
 }
 .working-hours {
+    max-width: 20%;
     display: flex;
     flex-direction: column;
 }
 .clock {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
-.clock :nth-child(1) {
+.clock img {
     height: 22px; 
-    width: 22px;
+    width: 20px;
     margin-right: 8px;
 }
-.clock :nth-child(2) {
+.clock p {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: #099DBA;
 }
 .working-hours .time {
-    margin-top: 10px;
+    margin-top: 5px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 14px;
     color: #474551;
 }
 .massangers {
-    margin-right: 60px;
-    margin-left: 226px;
+    max-width: 10%;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .massangers :first-child {
@@ -212,6 +221,10 @@ header {
     width: 28px;
     margin-left: 8px;
 }
+.numbers {
+    max-width: 20%;
+    position: relative;
+}
 .numbers-fact {
     font-weight: 600;
     font-size: 20px;
@@ -220,8 +233,9 @@ header {
     color: #474551;
 }
 .call-me {
-    margin-top: 2px;
-    float: right;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -232,6 +246,18 @@ header {
 .call-me:hover {
     color: #0688a2;
     font-size: 18px;
+}
+.contact-popup {
+    display: none;
+    max-width: 15%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.025em;
+    color: #474551;
+}
+.burger-solid {
+    display: none;
 }
 /* Конец шапки сайта */
 
@@ -425,6 +451,28 @@ header {
     font-weight: 600;
     line-height: 22px;
 }
+#form-for-user-name-in-header-feedback-window:focus, #form-for-user-number-in-header-feedback-window:focus, 
+#form-for-user-name-in-appointment-window-in-first-block:focus, #form-for-user-number-in-appointment-window-in-first-block:focus, 
+#form-for-user-name-in-appointment-window-in-second-block:focus, #form-for-user-number-in-appointment-window-in-second-block:focus,
+#form-for-user-name-in-appointment-window-in-fourth-block:focus, #form-for-user-number-in-appointment-window-in-fourth-block:focus,
+#form-for-user-name-in-appointment-window-in-fourth-block-1:focus, #form-for-user-number-in-appointment-window-in-fourth-block-1:focus,
+#form-for-user-name-in-appointment-window-in-fourth-block-2:focus, #form-for-user-number-in-appointment-window-in-fourth-block-2:focus,
+#form-for-user-name-in-appointment-window-in-fourth-block-3:focus, #form-for-user-number-in-appointment-window-in-fourth-block-3:focus,
+#form-for-user-name-in-appointment-window-in-fourth-block-4:focus, #form-for-user-number-in-appointment-window-in-fourth-block-4:focus,
+#form-for-user-name-in-appointment-window-in-fourth-block-5:focus, #form-for-user-number-in-appointment-window-in-fourth-block-5:focus {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 2px solid #BDF8F9;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
 
 #form-for-user-name-in-header-feedback-window::-webkit-input-placeholder, #form-for-user-number-in-header-feedback-window::-webkit-input-placeholder, 
 #form-for-user-name-in-appointment-window-in-first-block::-webkit-input-placeholder, #form-for-user-number-in-appointment-window-in-first-block::-webkit-input-placeholder,
@@ -477,23 +525,18 @@ main {
 /* Начало первого блока контента */
 .first-block-conteiner {
     background-image: url(../Image/IMG/Backgraund-1.png);
-    background-size: 100%;
-    /* background-size: cover; */
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-
-}
-.first-block {
-    max-width: 1290px;
-    margin: 0 auto;            /* Делаем чтобы контент всегда центровался независимо от экрана*/
+    position: relative;
 }
 .first-block-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;                      /* Делаем так чтобы при переполнении строки текст не наезжал дркг на дркга а переносился */
-    align-items: flex-start;              /* Выравниваем все элементы по левому краю контейнера */
+    align-items: flex-start;
+    max-width: 83%;
 }
-.first-block-text :nth-child(1) {
+.first-block-text h1 {
     margin: 92px 0 30px;
     font-weight: 700;
     font-size: 58px;
@@ -501,6 +544,7 @@ main {
     color: #474551;
 }
 .first-block-text :nth-child(2) {
+    max-width: 60%;
     margin-bottom: 60px;
     font-weight: 600;
     font-size: 28px;
@@ -508,6 +552,7 @@ main {
     color: #099DBA;
 }
 .first-block-text :nth-child(3) {
+    max-width: 50%;
     margin-bottom: 60px;
     font-weight: 500;
     font-size: 24px;
@@ -522,21 +567,16 @@ main {
     line-height: 140%;
 }
 /* Кнопка записи на приём */
-.first-block-text :nth-child(4) {
-    margin-bottom: 82px;
-    /* Описание оболочки кнопки */
-    width: 190px;
+.first-block-text button {
+    margin-bottom: 120px;
+    width: 25%;
     height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 10px;
     background-color: #046DBF;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
     border-radius: 30px;
     border-style: none;
-    /* Описание текста кнопки */
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
@@ -555,55 +595,61 @@ main {
 }
 /* Вынесенные блоки */
 .first-block-components {
-    width: 1290px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.Component-1, .Component-2, .Component-3 {
-    width: 410px;
-    height: 150px;
-    background: #F3FEFE;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+}
+.Component {
+    width: calc(33% - 20px);
+    height: 150px;
+    background-color: #F3FEFE;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
     box-shadow: 0 0 5 10px rgba(0,0,0,0.5);
 }
-.Component-1 .Calendar, .Component-2 .UserGear, .Component-3 .Fingerprint {
+.Component .icon {
     width: 63px;
     height: 63px;
-    margin: auto 30px auto 20px;
+    margin: auto 20px auto 20px;
 }
-.Component-1 .first-block-components-content-1, .Component-2 .first-block-components-content-2, .Component-3 .first-block-components-content-3 {
+.Component .first-block-components-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.first-block-components-content-2 :first-child, .first-block-components-content-1 :first-child, .first-block-components-content-3 :first-child {
+.first-block-components-content p:first-child {
     margin: 0;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 140%;
+    font-size: 22px;
+    line-height: 110%;
     color: #099DBA;
 }
-.first-block-components-content-2 :last-child, .first-block-components-content-1 :last-child, .first-block-components-content-3 :last-child {
+.first-block-components-content p:last-child {
     margin-top: 10px;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
+    font-size: 16px;
+    line-height: 110%;
     color: #000000;
 }
 /* Конец первого блока контента */
 
 /* Начало второго блока контента */
 .second-block-conteiner {
-    max-width: 1290px;
-    margin: 128px auto 90px;            /* Делаем чтобы контент всегда центровался независимо от экрана*/
     text-align: center;
+    padding: 140px 0 100px;
 }
 .second-block-text {
+    max-width: 95%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -628,18 +674,28 @@ main {
 .second-block-components {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-.component-1-second-block-components, .component-2-second-block-components, .component-3-second-block-components {
-    width: 410px;
-    height: 422px;
+.component__second-block-components {
+    max-width: calc(33% - 15px);
+    /* min-width: 410px !important; */
+    height: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.component-1-second-block-components :nth-child(2), 
-.component-2-second-block-components :nth-child(2), 
-.component-3-second-block-components :nth-child(2) {
+.img__component__second-block-components {
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img__component__second-block-components img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.component__second-block-components :nth-child(2) {
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 24px;
@@ -647,9 +703,7 @@ main {
     text-align: center;
     color: #474551;
 }
-.component-1-second-block-components :nth-child(3), 
-.component-2-second-block-components :nth-child(3), 
-.component-3-second-block-components :nth-child(3) {
+.component__second-block-components :nth-child(3) {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
@@ -659,7 +713,7 @@ main {
 .big-button-Make-an-appointment {     /*Кнопка записи на прием*/
     margin: auto;
     /* Описание оболочки кнопки */
-    width: 404px;
+    width: 40%;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -691,11 +745,10 @@ main {
 
 /* Начало третьего блока контента "АКЦИИ" */
 .therd-block-conteiner {
-    max-width: 1370px;          /* Область для контента шире, так как нужно место под стрелочки карусели */
-    margin: 90px auto 90px;            /* Делаем чтобы контент всегда центровался независимо от экрана + отступы от соседних блоков*/
-    text-align: center;
 }
 .therd-block-text {
+    max-width: 95%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -723,45 +776,43 @@ main {
     color: #046DBF;
 }
 .therd-block-components {
-    width: 1370px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 .btn-prev, .btn-next {
     position: absolute;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: #ffffff00;
     border: none;
-    padding: 0;
     width: 40px;
     cursor: pointer;
     transition: opacity .2s ease-in-out;
 }
+.btn-prev {
+    left: -40px;
+}
 .btn-next {
     left: auto;
-    right: 0;
+    right: -40px;
 }
-.btn-prev:hover, .btn-next:hover {
+.btn-prev:hover img, .btn-next:hover img{
     opacity: 0.6;
 }
-
 .btn-prev img, .btn-next img {
     width: 100%;
     height: 100%;
 }
 .therd-block-slider {
-    max-width: 1370px;
-    width: 100%;
+    max-width: 100%;
     /* height: 490px; */
     position: relative;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 .slide {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     display: none;
 }
@@ -769,7 +820,7 @@ main {
     display: block;
 }
 .content-slide {
-    padding: 40px;
+    padding: 40px 0 40px ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -783,10 +834,13 @@ main {
 }
 .card {
     position: relative;
-    width: 50%;
+    overflow: hidden;
+    width: calc(33% - 20px);
 }
 .card img {
-    width: 410px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     height: auto;
 }
 .card .btn-in-card {                                   /* Описание кнопочек "Участвовать" в карточкаx акций */
@@ -798,7 +852,7 @@ main {
     Height: 40px;
 
     position: absolute;
-    top: 359px;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -816,8 +870,8 @@ main {
 
 /* Добавляем всплывающее окошко для участия в акции или записи*/
 #wrapper-modal, #wrapper-modal-1, #wrapper-modal-2, #wrapper-modal-3, #wrapper-modal-4, #wrapper-modal-5 {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     display: none;
 }
 #wrapper-modal.active, #wrapper-modal-1.active, #wrapper-modal-2.active, #wrapper-modal-3.active, #wrapper-modal-4.active, #wrapper-modal-5.active {
@@ -836,11 +890,11 @@ main {
 #modal-window, #modal-window-1, #modal-window-2,
 #modal-window-3, #modal-window-4, #modal-window-5 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 410px;
-    height: 380px;
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 2;
     border: none;
     border-radius: 20px;
@@ -858,9 +912,9 @@ main {
     border: none;
     width: 42px;
     height: 42px;
-    left: 360px;
-    /* top: 10px; */
+    right: 0;
     opacity: 0.3;
+    cursor: pointer;
 }
 #modal-window #btn-in-madal-window-close:hover, #modal-window-1 #btn-in-madal-window-close-1:hover, 
 #modal-window-2 #btn-in-madal-window-close-2:hover, #modal-window-3 #btn-in-madal-window-close-3:hover, #modal-window-4 #btn-in-madal-window-close-4:hover, 
@@ -1017,11 +1071,11 @@ main {
 
 /* Начало четвертого блока */
 .fourth-block-conteiner {
-    max-width: 1290px;
-    margin: 0 auto;            /* Делаем чтобы контент всегда центровался независимо от экрана*/
-    text-align: center;
+    padding: 80px 0;
 }
 .fourth-block-text {
+    max-width: 95%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1037,6 +1091,7 @@ main {
     font-size: 28px;
     line-height: 140%;
     color: #099DBA;
+    text-align: center;
 
     margin: 30px auto 60px;
 }
@@ -1047,7 +1102,7 @@ main {
     flex-wrap: wrap;
 }
 .fourth-block-components .card-servic-in-fourth-block-components {
-    width: 630px;
+    width: calc(50% - 20px);
     height: 560px;
     margin-bottom: 30px;
 
@@ -1061,7 +1116,7 @@ main {
 }
 .text-with-img-in-component-fourth-block {
     position: relative;
-    width: 630px;
+    width: 100%;
     height: 560px;
 }
 .text-4-block-components-conteiner {
@@ -1080,6 +1135,7 @@ main {
     margin: 0 auto 9px 0;
 }
 .text-4-block-components-conteiner .u {
+    max-width: 85%;
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
@@ -1090,7 +1146,7 @@ main {
     top: 224px;
     left: 31px;
     margin: 0;
-    width: 395px;
+    width: 60%;
     text-align: left;
     font-weight: 600;
     font-size: 22px;
@@ -1175,8 +1231,7 @@ main {
 
 /* Начало ПЯТОГО блока */
 .fifth-block-conteiner {
-    max-width: 1290px;
-    margin: 30px auto 90px;            /* Делаем чтобы контент всегда центровался независимо от экрана*/
+    padding: 40px 0;
 
     background: #F3FEFE;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
@@ -1187,13 +1242,17 @@ main {
 }
 .first-part-of-fifth-block {
     display: flex;
+    justify-content: space-between;
     margin: 60px 80px auto;
+}
+.content-1-first-part-of-fifth-block,
+.content-2-first-part-of-fifth-block {
+    width: calc(50% - 20px);
 }
 .content-1-first-part-of-fifth-block {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 547px;
     text-align: flex-start;
 }
 .content-1-first-part-of-fifth-block p {
@@ -1249,40 +1308,44 @@ main {
 .second-part-of-fifth-block {
     display: flex;
     background-image: url(../Image/IMG/bgr-img-5-block.png);
-    background-size: 100%;
+    background-position: center;
     background-size: cover;
     border-radius: 0px 0px 20px 20px;
-}
-.second-part-of-fifth-block-wrapper {
-    margin: 60px 80px 77px;
-    display: flex;
+    max-width: 100%;
     flex-direction: column;
     align-items: center;
+    padding: 60px 0;
 }
-.second-part-of-fifth-block-wrapper .step1,
-.second-part-of-fifth-block-wrapper .step2,
-.second-part-of-fifth-block-wrapper .step3,
-.second-part-of-fifth-block-wrapper .step4 {
+.steps-wrapper {
+    width: 100%;
+}
+.second-part-of-fifth-block .step1,
+.second-part-of-fifth-block .step2,
+.second-part-of-fifth-block .step3,
+.second-part-of-fifth-block .step4 {
     background: #BDF8F9;
     border-radius: 20px;
-    Width: 770px;
+    Width: 70%;
     Height: 120px;
     margin-bottom: 30px;
     display: flex;
 }
-.second-part-of-fifth-block-wrapper .step2 {
-    margin-left: 110px;
+.second-part-of-fifth-block .step1 {
+    margin-left: 7%;
 }
-.second-part-of-fifth-block-wrapper .step3 {
-    margin-left: 220px;
+.second-part-of-fifth-block .step2 {
+    margin-left: 12%;
 }
-.second-part-of-fifth-block-wrapper .step4 {
-    margin-left: 330px;
+.second-part-of-fifth-block .step3 {
+    margin-left: 17%;
 }
-.second-part-of-fifth-block-wrapper .step1 span,
-.second-part-of-fifth-block-wrapper .step2 span,
-.second-part-of-fifth-block-wrapper .step3 span,
-.second-part-of-fifth-block-wrapper .step4 span {
+.second-part-of-fifth-block .step4 {
+    margin-left: 22%;
+}
+.second-part-of-fifth-block .step1 span,
+.second-part-of-fifth-block .step2 span,
+.second-part-of-fifth-block .step3 span,
+.second-part-of-fifth-block .step4 span {
     display: inline-block;
     background: #FFFFFF;
     color: #046DBF;
@@ -1292,15 +1355,14 @@ main {
     height: 100px;
     line-height: 100px;
 
-    
     margin: 10px 0 10px 20px;
     font-weight: 700;
     font-size: 68px;
 }
-.second-part-of-fifth-block-wrapper .step1 p,
-.second-part-of-fifth-block-wrapper .step2 p,
-.second-part-of-fifth-block-wrapper .step3 p,
-.second-part-of-fifth-block-wrapper .step4 p {
+.second-part-of-fifth-block .step1 p,
+.second-part-of-fifth-block .step2 p,
+.second-part-of-fifth-block .step3 p,
+.second-part-of-fifth-block .step4 p {
     margin: 18px 27px 18px 30px;
     width: 593px;
     font-weight: 500;
@@ -1311,7 +1373,9 @@ main {
 .massangers-with-text-in-component-fifth-block {
     display: flex;
     align-items: center;
-    margin-top: 60px;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
 }
 .massangers-with-text-in-component-fifth-block p {
     margin-left: 26px;
@@ -1600,3 +1664,5 @@ main {
     color: #099DBA;
 }
 /* Конец шестого блока */
+
+/* @import url(./adaptic.css); */

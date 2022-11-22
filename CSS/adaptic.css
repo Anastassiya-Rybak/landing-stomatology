@@ -1,0 +1,153 @@
+@media (max-width: 1165px) {
+    .container {
+        padding: 0 15px ;
+    }
+    .header-logo a p {
+        font-size: 16px !important;
+    }
+    .adress, .working-hours {
+        min-width: 20%;
+    }
+    .second-block-conteiner {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .First-paragraph-of-the-first-block,
+    .Second-paragraph-of-the-first-block {
+        max-width: 90% !important;
+    }
+    .Make-an-appointment {
+        width: 40% !important;
+    }
+}
+@media (max-width: 1020px) {
+    .header-wrapper {
+        justify-content: space-around !important;
+    }
+    .header-logo a p{
+        display: none;
+    }
+    .adress, .working-hours {
+        min-width: 26% !important;
+    }
+    .massangers a, .numbers {
+        display: none;
+    }
+    .contact-popup {
+        display: flex !important;
+    }
+    .first-block-components, .second-block-components, .fourth-block-components {
+        padding: 0 15px;
+    }
+    .card-servic-in-fourth-block-components {
+        width: 100% !important;
+    }
+    .first-part-of-fifth-block {
+        display: flex;
+        flex-direction: column !important;
+    }    
+    .content-1-first-part-of-fifth-block,
+    .content-2-first-part-of-fifth-block {
+        width: 100% !important;
+    }
+    .steps-wrapper div {
+        align-items: center !important;
+    }
+    .steps-wrapper p {
+        font-size: 18px !important;
+    }
+    .steps-wrapper span {
+        width: 75px !important;
+        height: 50px !important;
+        font-size: 46px !important ;
+        line-height: 50px !important;
+    }
+}
+@media (max-width: 760px) {
+    .first-block-text .Make-an-appointment {
+        width: 60% !important;
+    }
+    .first-block-components {
+        bottom: -270px !important;
+    }
+    .Component {
+        flex-direction: column;
+        height: 220px !important;
+    }
+    .Component .icon {
+        margin: 10px !important;
+    }
+    .first-block-components-content {
+        text-align: center;
+        padding: 0 10px;
+    }
+    .second-block-conteiner {
+        padding-top: 200px !important;
+        padding-bottom: 0 !important;
+    }
+
+}
+
+@media (max-width: 704px) {
+    .first-block-text .Make-an-appointment {
+        width: 60% !important;
+    }
+    .big-button-Make-an-appointment {
+        margin-top: 40px !important;
+    }
+    .therd-block-conteiner {
+        display: none;
+    }
+    .steps-wrapper p {
+        font-size: 14px !important;
+    }
+    .massangers-with-text-in-component-fifth-block {
+        width: 80% !important;
+    }
+    .massangers-with-text-in-component-fifth-block p {
+        margin-left: 10px !important;
+    }
+}
+@media (max-width: 470px) {
+    .adress, .working-hours, .contact-popup {
+        display: none !important;
+    }
+    .burger-solid {
+        display: block !important;
+        width: 15%;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    .first-block-text,
+    .First-paragraph-of-the-first-block,
+    .Second-paragraph-of-the-first-block {
+        max-width: 100% !important;
+    }
+    .Header-of-the-first-block {
+        font-size: 42px !important;
+        line-height: 100% !important;    
+    }
+    .First-paragraph-of-the-first-block {
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 110% !important;
+    }
+    .Second-paragraph-of-the-first-block {
+        margin-bottom: 20px !important;
+        font-size: 22px !important;
+        line-height: 120% !important;
+    }
+    .Component {
+        height: 190px !important;
+    }
+    .Component .icon {
+        width: 47px !important;
+        height: 47px !important;
+    }
+    .first-block-components-content p:first-child {
+        font-size: 18px !important;
+    }
+    .first-block-components-content p:last-child {
+        font-size: 14px !important;
+    }
+}

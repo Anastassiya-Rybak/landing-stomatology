@@ -6,32 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стомотологическая клиника 'Семейный Доктор'</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/adaptic.css">
 </head>
 <body>
     <header>
-        <div class="header-wrapper">
+        <div class="header-wrapper container">
             <div class="header-logo">
                 <a href="/" class="logo-svg">
                     <img src="Image/SVG/Logo-header.svg" alt="Стомотологическая клиника 'Семейный Доктор'" width="95px">
+                    <p>Стоматологическая клиника </p>
                 </a>
-                <a href="/"><p>Стоматологическая <br>
-                    клиника </p></a>
             </div>
             <div class="adress">
                 <div class="map-pin">
                     <img src="Image/SVG/adress-MapPin.svg" alt="Адрес" height="22px" width="20px">
                     <p>Адрес</p>
                 </div>
-                <p class="adress-text">г. Коломна, ул. Октябрьской <br>
-                революции д. 161</p>
+                <p class="adress-text">
+                    г. Коломна, ул. Октябрьской <br>
+                    революции д. 161
+                </p>
             </div>
             <div class="working-hours">
                 <div class="clock">
                     <img src="Image/SVG/Clock.svg" alt="Часы работы" height="22px" width="22px">
                     <p>Время работы</p>
                 </div>
-                <p class="time">Работаем без выходных  <br>
-                с 9:00 до 21:00</p>
+                <p class="time">
+                    Работаем без выходных  <br>
+                    с 9:00 до 21:00
+                </p>
             </div>
             <div class="massangers">
                 <a href="#">
@@ -48,6 +52,10 @@
                     Перезвоните мне
                 </button>
             </div>
+            <p class="contact-popup">
+                Контакты
+            </p>
+            <img class="burger-solid" src="./Image/SVG/bars-solid.svg" alt="">
         </div>
     </header>
     <section>
@@ -58,17 +66,21 @@
                     <button id="btn-in-feedback-window-close"></button>
                 </div>
                 <div class="content-in-header-feedback-window">
-                    <p>Напишите ваши контактные данные и наши менеджеры свяжуться с вами в ближайшее время</p>
+                    <p>
+                        Напишите ваши контактные данные и наши менеджеры 
+                        свяжуться с вами в ближайшее время
+                    </p>
                 </div>
                 <form action="#">
-                    <input id="form-for-user-name-in-header-feedback-window" type="text" placeholder="Имя" name="name" id="name-to-call">
-                    <input id="form-for-user-number-in-header-feedback-window" type="number" placeholder="   Телефон" name="number" id="number-to-call">
+                    <input id="form-for-user-name-in-header-feedback-window" 
+                    type="text" placeholder="Имя" name="name" id="name-to-call">
+                    <input id="form-for-user-number-in-header-feedback-window" 
+                    type="number" placeholder="   Телефон" name="number" id="number-to-call">
                 </form>
                 <div>
                     <button id="btn-call-me-in-header-feedback-window">
                         Перезвоните мне
                     </button>
-                </div>
                 </div>
             </div>
         </div>
@@ -76,47 +88,50 @@
     <main>
         <div class="main-wrapper">
             <div class="first-block-conteiner">
-                <div class="first-block">
+                <div class="first-block container">
                     <div class="first-block-text">
                         <h1 class="Header-of-the-first-block">
-                            Лечение и протезирование зубов <br> по Европейским стандартам</h1>
+                            Лечение и протезирование зубов по Европейским 
+                            стандартам</h1>
                         <p class="First-paragraph-of-the-first-block">
-                            Предоставим 2-3 плана качественного <br> 
-                            лечения под ваш бюджет</p>
+                            Предоставим 2-3 плана качественного  
+                            лечения под ваш бюджет
+                        </p>
                         <p class="Second-paragraph-of-the-first-block">
-                            Запишитесь на <span class="accent">бесплатную</span> первичную <br> 
-                            консультацию - диагностику зубов</p>
+                            Запишитесь на <span class="accent">бесплатную</span> первичную 
+                            консультацию - диагностику зубов
+                        </p>
                         <button id="make-an-appointment" class="Make-an-appointment">
                             Записаться
                         </button>
                     </div>
                     <div class="first-block-components">
-                        <div class="Component-1">
-                            <img class="Calendar" src="Image/SVG/Calendar.svg" alt="Работаем с 2011 года" width="63px" height="63px">
-                            <div class="first-block-components-content-1">
+                        <div class="Component">
+                            <img class="icon" src="Image/SVG/Calendar.svg" alt="Работаем с 2011 года" width="63px" height="63px">
+                            <div class="first-block-components-content">
                                 <p>Работаем с 2011 года</p>
                                 <p>Многолетний опыт работы - <br>
                                 залог качественного сервиса</p>
                             </div>
                         </div>
-                        <div class="Component-2">
-                            <img class="UserGear" src="Image/SVG/UserGear.svg" alt="Опытные врачи" width="63px" height="63px">
-                            <div class="first-block-components-content-2">
+                        <div class="Component">
+                            <img class="icon" src="Image/SVG/UserGear.svg" alt="Опытные врачи" width="63px" height="63px">
+                            <div class="first-block-components-content">
                                 <p>Опытные врачи</p>
                                 <p>Огромный опыт персонала и <br>
                                 слаженность работы</p> 
                             </div>
                         </div>
-                        <div class="Component-3">
-                            <img class="Fingerprint" src="Image/SVG/Fingerprint.svg" alt="Уникальный подход" width="63px" height="63px">
-                            <div class="first-block-components-content-3">
+                        <div class="Component">
+                            <img class="icon" src="Image/SVG/Fingerprint.svg" alt="Уникальный подход" width="63px" height="63px">
+                            <div class="first-block-components-content">
                                 <p>Уникальный подход</p>
                                 <p>Применяем в своей работе <br>
                                 современные технологии</p>
                             </div>
                         </div>
                     </div>
-                    <div id="appointment-window-in-first-block-wrapper" class="appointment-window-in-first-block-wrapper">           <!--Всплывающее окошко при нажатии на "Записаться"-->
+                    <div id="appointment-window-in-first-block-wrapper" class="appointment-window-in-first-block-wrapper">           
                         <div id="appointment-window-in-first-block-overlay"></div>
                         <div id="appointment-window-in-first-block">
                             <div>
@@ -134,12 +149,11 @@
                                     Записаться
                                 </button>
                             </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="second-block-conteiner">
+            <div class="second-block-conteiner container">
                 <div class="second-block-text">
                     <h3 class="Header-of-the-second-block">
                         Бесплатная консультация врача
@@ -149,8 +163,10 @@
                     </p>
                 </div>
                 <div class="second-block-components">
-                    <div class="component-1-second-block-components">
-                        <img src="Image/IMG/block-2-1.png" alt="" width="410px" height="280px">
+                    <div class="component__second-block-components">
+                        <div class="img__component__second-block-components">
+                            <img src="Image/IMG/block-2-1.png" alt="" >
+                        </div>
                         <p>
                             Полный осмотр и диагностика полости рта
                         </p>
@@ -158,8 +174,10 @@
                             При необходимости сделаем дополнительный снимок зубов, у нас в клинике
                         </p>
                     </div>
-                    <div class="component-2-second-block-components">
-                        <img src="Image/IMG/Block-2-2.png" alt="" width="410px" height="280px">
+                    <div class="component__second-block-components">
+                        <div class="img__component__second-block-components">
+                            <img src="Image/IMG/Block-2-2.png" alt="">
+                        </div>
                         <p>
                             Составит 2-3 плана лечения на выбор
                         </p>
@@ -167,8 +185,11 @@
                             Вы сможете выбрать подходящий план лечения, исходя из бюджета
                         </p>
                     </div>
-                    <div class="component-3-second-block-components">
-                        <img src="Image/IMG/Block-2-3.png" alt="" width="410px" height="280px">
+                    <div class="component__second-block-components">
+                        <div class="img__component__second-block-components">
+                            <img src="Image/IMG/Block-2-3.png" alt="">
+                        </div>
+
                         <p>
                             При необходимости проведем проф. гигиену
                         </p>
@@ -180,7 +201,7 @@
                 <button id="big-button-Make-an-appointment" class="big-button-Make-an-appointment">
                     Записаться
                 </button>
-                <div id="appointment-window-in-second-block-wrapper" class="appointment-window-in-second-block-wrapper">           <!--Всплывающее окошко при нажатии на "Записаться"-->
+                <div id="appointment-window-in-second-block-wrapper" class="appointment-window-in-second-block-wrapper">          
                     <div id="appointment-window-in-second-block-overlay"></div>
                     <div id="appointment-window-in-second-block">
                         <div>
@@ -198,11 +219,10 @@
                                 Записаться
                             </button>
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="therd-block-conteiner">
+            <div class="therd-block-conteiner container">
                 <div class="therd-block-text">
                     <h3 class="Header-of-the-therd-block">
                         Акции
@@ -214,13 +234,15 @@
                 </div>
                 <div id="therd-block-components" class="therd-block-components">
                     <div class="therd-block-slider">
-                        <button id="btn-prev" class="btn-prev"><img src="Image/SVG/btn-left.svg" alt="Назад" width="40px" height="40px"></button>
+                        <button id="btn-prev" class="btn-prev">
+                            <img src="Image/SVG/btn-left.svg" alt="Назад" width="40px" height="40px">
+                        </button>
                         <div class="slide active">
                             <div class="content-slide">
                                 <div class="card">
-                                    <img src="Image/IMG/akcii-1.png" width="410px" height="410px">
+                                    <img src="Image/IMG/akcii-1.png" width="" height="">
                                     <button id="btn-in-card" class="btn-in-card">Участвовать</button>
-                                    <div id="wrapper-modal" class="wrapper-modal">           <!--Всплывающее окошко при нажатии на "Участвовать"-->
+                                    <div id="wrapper-modal" class="wrapper-modal">      
                                         <div id="overlay"></div>
                                         <div id="modal-window">
                                             <div>
@@ -248,9 +270,9 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img src="Image/IMG/akcii-2.png" width="410px" height="410px">
+                                    <img src="Image/IMG/akcii-2.png" width="" height="">
                                     <button id="btn-in-card-1" class="btn-in-card">Участвовать</button>
-                                    <div id="wrapper-modal-1" class="wrapper-modal">           <!--Всплывающее окошко при нажатии на "Участвовать"-->
+                                    <div id="wrapper-modal-1" class="wrapper-modal">          
                                         <div id="overlay-1" class="overlay"></div>
                                         <div id="modal-window-1">
                                             <div>
@@ -278,9 +300,9 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img src="Image/IMG/akcii-3.png" width="410px" height="410px">
+                                    <img src="Image/IMG/akcii-3.png" width="" height="">
                                     <button id="btn-in-card-2" class="btn-in-card">Участвовать</button>
-                                    <div id="wrapper-modal-2">           <!--Всплывающее окошко при нажатии на "Участвовать"-->
+                                    <div id="wrapper-modal-2">        
                                         <div id="overlay-2"></div>
                                         <div id="modal-window-2">
                                             <div>
@@ -314,7 +336,7 @@
                                 <div class="card">
                                     <img src="Image/IMG/akcii-2.png" width="410px" height="410px">
                                     <button id="btn-in-card-3" class="btn-in-card">Участвовать</button>
-                                    <div id="wrapper-modal-3">           <!--Всплывающее окошко при нажатии на "Участвовать"-->
+                                    <div id="wrapper-modal-3">        
                                         <div id="overlay-3"></div>
                                         <div id="modal-window-3">
                                             <div>
@@ -344,7 +366,7 @@
                                 <div class="card">
                                     <img src="Image/IMG/akcii-3.png" width="410px" height="410px">
                                     <button id="btn-in-card-4" class="btn-in-card">Участвовать</button>
-                                    <div id="wrapper-modal-4">           <!--Всплывающее окошко при нажатии на "Участвовать"-->
+                                    <div id="wrapper-modal-4">        
                                         <div id="overlay-4"></div>
                                         <div id="modal-window-4">
                                             <div>
@@ -374,7 +396,7 @@
                                 <div class="card">
                                     <img src="Image/IMG/akcii-1.png" width="410px" height="410px">
                                     <button id="btn-in-card-5" class="btn-in-card">Участвовать</button>
-                                    <div id="wrapper-modal-5">           <!--Всплывающее окошко при нажатии на "Участвовать"-->
+                                    <div id="wrapper-modal-5">         
                                         <div id="overlay-5"></div>
                                         <div id="modal-window-5">
                                             <div>
@@ -403,7 +425,9 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="btn-next" class="btn-next"><img src="image/SVG/btn-right.svg" alt="Вперёд" width="40px" height="40px"></button>
+                        <button id="btn-next" class="btn-next">
+                            <img src="image/SVG/btn-right.svg" alt="Вперёд" width="40px" height="40px">
+                        </button>
                     </div>
                 </div>
                 <div class="dots-wrapper">
@@ -412,21 +436,22 @@
                     <span class="dot"></span>
                 </div>
             </div>
-            <div class="fourth-block-conteiner">
+            <div class="fourth-block-conteiner container">
                 <div class="fourth-block-text">
                     <h3>Услуги</h3>
                     <p>Наша клиника предоставляет широкий спектр услуг, выберите подходящую <br>
                         вам и <span class="accent-text-in-fourth-block-text">запишитесь на бесплатную консультацию</span> 
                     </p>
                 </div>
-                <!-- Карточки с услугами стоматологии -->
                 <div class="fourth-block-components">
                     <div class="card-servic-in-fourth-block-components">
                         <div class="text-with-img-in-component-fourth-block">
                             <img class="img4-1" src="Image/IMG/4-block-1.png" alt="">
                             <div class="text-4-block-components-conteiner">
                                 <h5>Хирургия</h5>
-                                <p class="u">Удаление зуба является одной из самых распространенных операций в стоматологической практике.</p>
+                                <p class="u">Удаление зуба является одной из самых распространенных
+                                     операций в стоматологической практике.
+                                </p>
                             </div>    
                             <ul>
                                 <li>Удаление зубов любой сложности</li>
@@ -454,7 +479,7 @@
                             <div class="text-4-block-components-conteiner">
                                 <h5>Терапия</h5>
                                 <p class="u">
-                                    Лечение напрямую зависит от стадии заболевания. Мы подбираем наиболее эффективные методы диагностики и <br>
+                                    Лечение напрямую зависит от стадии заболевания. Мы подбираем наиболее эффективные методы диагностики и
                                     терапии.
                                 </p>
                             </div>
@@ -485,7 +510,9 @@
                             <img class="img4-1" src="Image/IMG/4-block-3.png" alt="">
                             <div class="text-4-block-components-conteiner">
                                 <h5>Ортопедия</h5>
-                                <p>Помогает решить проблемы, связанные с аномалиями, приобретенными дефектами, повреждениями и деформациями органов жевательно-речевого аппарата.</p>
+                                <p>Помогает решить проблемы, связанные с аномалиями, приобретенными дефектами, повреждениями 
+                                    и деформациями органов жевательно-речевого аппарата.
+                                </p>
                             </div>    
                                 <ul>
                                     <li>Коронки и мосты керамические</li>
@@ -506,8 +533,12 @@
                             </p>
                         </div>
                         <div class="buttons-in-component-fourth-block">
-                            <button id="btn-appointment-in-fourth-block-2" class="btn-appointment-in-fourth-block">Записаться</button>
-                            <button id="btn-price-window-in-fourth-block-2" class="btn-price-window-in-fourth-block">Узнать цены</button>
+                            <button id="btn-appointment-in-fourth-block-2" class="btn-appointment-in-fourth-block">
+                                Записаться
+                            </button>
+                            <button id="btn-price-window-in-fourth-block-2" class="btn-price-window-in-fourth-block">
+                                Узнать цены
+                            </button>
                         </div>
                     </div>
                     <div class="card-servic-in-fourth-block-components">
@@ -515,7 +546,10 @@
                             <img class="img4-1" src="Image/IMG/4-block-4.png" alt="">
                             <div class="text-4-block-components-conteiner">
                                 <h5>Имплантация</h5>
-                                <p>Это операция по установке в челюстную ткань специального стоматологического штифта, который будет играть роль корня.</p>
+                                <p>
+                                    Это операция по установке в челюстную ткань специального стоматологического штифта, 
+                                    который будет играть роль корня.
+                                </p>
                             </div>    
                                 <ul>
                                     <li>Установка имплантов OSSTEM implant</li>
@@ -535,8 +569,12 @@
                             </p>
                         </div>
                         <div class="buttons-in-component-fourth-block">
-                            <button id="btn-appointment-in-fourth-block-3" class="btn-appointment-in-fourth-block">Записаться</button>
-                            <button id="btn-price-window-in-fourth-block-3" class="btn-price-window-in-fourth-block">Узнать цены</button>
+                            <button id="btn-appointment-in-fourth-block-3" class="btn-appointment-in-fourth-block">
+                                Записаться
+                            </button>
+                            <button id="btn-price-window-in-fourth-block-3" class="btn-price-window-in-fourth-block">
+                                Узнать цены
+                            </button>
                         </div>
                     </div>
                     <div class="card-servic-in-fourth-block-components">
@@ -544,7 +582,9 @@
                             <img class="img4-1" src="Image/IMG/4-block-5.png" alt="">
                             <div class="text-4-block-components-conteiner">
                                 <h5>Ортодонтия</h5>
-                                <p>Поможет сделать вашу улыбку красивой и исправит прикус. Исправляет аномалии челюстей, положения челюстей в черепе, формы, величины, соотношения зубных дуг.</p>
+                                <p>Поможет сделать вашу улыбку красивой и исправит прикус. Исправляет аномалии челюстей, 
+                                    положения челюстей в черепе, формы, величины, соотношения зубных дуг.
+                                </p>
                             </div>    
                                 <ul>
                                     <li>Установка брекет систем</li>
@@ -564,8 +604,12 @@
                             </p>
                         </div>
                         <div class="buttons-in-component-fourth-block">
-                            <button id="btn-appointment-in-fourth-block-4" class="btn-appointment-in-fourth-block">Записаться</button>
-                            <button id="btn-price-window-in-fourth-block-4" class="btn-price-window-in-fourth-block">Узнать цены</button>
+                            <button id="btn-appointment-in-fourth-block-4" class="btn-appointment-in-fourth-block">
+                                Записаться
+                            </button>
+                            <button id="btn-price-window-in-fourth-block-4" class="btn-price-window-in-fourth-block">
+                                Узнать цены
+                            </button>
                         </div>
                     </div>
                     <div class="card-servic-in-fourth-block-components">
@@ -573,7 +617,9 @@
                             <img class="img4-1" src="Image/IMG/4-block-6.png" alt="">
                             <div class="text-4-block-components-conteiner">
                                 <h5>Отбеливание зубов</h5>
-                                <p>Стоматологическая процедура изменения оттенка зубной эмали. Отбеливание зубов относится к области косметической стоматологии.</p>
+                                <p>Стоматологическая процедура изменения оттенка зубной эмали. Отбеливание зубов относится 
+                                    к области косметической стоматологии.
+                                </p>
                             </div>    
                                 <ul>
                                     <li> Система Opalescence Boost</li>
@@ -591,8 +637,12 @@
                             </p>
                         </div>
                         <div class="buttons-in-component-fourth-block">
-                            <button id="btn-appointment-in-fourth-block-5" class="btn-appointment-in-fourth-block">Записаться</button>
-                            <button id="btn-price-window-in-fourth-block-5" class="btn-price-window-in-fourth-block">Узнать цены</button>
+                            <button id="btn-appointment-in-fourth-block-5" class="btn-appointment-in-fourth-block">
+                                Записаться
+                            </button>
+                            <button id="btn-price-window-in-fourth-block-5" class="btn-price-window-in-fourth-block">
+                                Узнать цены
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -620,15 +670,22 @@
                             </div>
                         </div>                        
             </section>
-            <div class="fifth-block-conteiner">
+            <div class="fifth-block-conteiner container">
                 <div class="first-part-of-fifth-block">
                     <div class="content-1-first-part-of-fifth-block">
-                        <p>Технология профессиональной гигиены полости рта <span class="accent-text-fifth-block">в 4 этапа</span></p>
-                        <label for="video-in-fifth-block">Посмотрите видео о технологии</label>
-                        <iframe id="video-in-fifth-block" width="550" height="305" src="https://www.youtube.com/embed/brW4tsxxJEQ" title="YouTube video player" 
+                        <p>
+                            Технология профессиональной гигиены полости рта
+                            <span class="accent-text-fifth-block">в 4 этапа</span>
+                        </p>
+                        <label for="video-in-fifth-block">
+                            Посмотрите видео о технологии
+                        </label>
+                        <iframe id="video-in-fifth-block" width="100%" height="305" src="https://www.youtube.com/embed/brW4tsxxJEQ" title="YouTube video player" 
                         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen></iframe>
-                        <button id="btn-price-window-in-fifth-block">Узнать цены</button>
+                        <button id="btn-price-window-in-fifth-block">
+                            Узнать цены
+                        </button>
                     </div>
                     <div class="content-2-first-part-of-fifth-block">
                         <ul>
@@ -645,224 +702,39 @@
                     </div>
                 </div>
                 <div class="second-part-of-fifth-block">
-                    <div class="second-part-of-fifth-block-wrapper">
-                        <div class="steps-wrapper">
-                            <div class="step1">
-                                <span class="span1">1</span>
-                                <p>Ультразвуковым аппаратом производится максимальная чистка в труднодоступных местах от поддесневого и наддесневого камня и налета.</p>
-                            </div>
-                            <div class="step2">
-                                <span class="span2">2</span>
-                                <p>Применение AIR FLOW не доставляет дискомфорта и боли, очищая межзубные отложения. </p>
-                            </div>
-                            <div class="step3">
-                                <span class="span3">3</span>
-                                <p>Полировка зубов при помощи специальных паст и щеточек. Такая чистка устраняет все неровности скопившихся отложений, освежает и убирает неприятный запах.</p>
-                            </div>
-                            <div class="step4">
-                                <span class="span4">4</span>
-                                <p>Покрытие зубов ременилизирующим гелем. Снимает чувствительность, предотвращает развитие кариеса. </p>
-                            </div>
+                    <div class="steps-wrapper">
+                        <div class="step1">
+                            <span class="span1">1</span>
+                            <p>Ультразвуковым аппаратом производится максимальная чистка в труднодоступных местах от поддесневого и наддесневого камня и налета.</p>
                         </div>
-                        <div class="massangers-with-text-in-component-fifth-block">
-                            <a href="#">
-                                <img src="Image/SVG/Telegram-mini.svg" alt="Telegram">
-                            </a>
-                            <a href="#">
-                                <img src="Image/SVG/WhatsApp-mini.svg" alt="What'sApp">
-                            </a>
-                            <p>
-                                спросить в мессенджере
-                            </p>
+                        <div class="step2">
+                            <span class="span2">2</span>
+                            <p>Применение AIR FLOW не доставляет дискомфорта и боли, очищая межзубные отложения. </p>
                         </div>
-                        <div class="buttons-in-fifth-second-part-block">
-                            <button id="btn-appointment-window-in-fifth-block">Записаться</button>
-                            <button id="btn-choose-doctor-window-in-fifth-block"><a href="">Выбрать врача</a></button>
+                        <div class="step3">
+                            <span class="span3">3</span>
+                            <p>Полировка зубов при помощи специальных паст и щеточек. Такая чистка устраняет все неровности скопившихся отложений, освежает и убирает неприятный запах.</p>
+                        </div>
+                        <div class="step4">
+                            <span class="span4">4</span>
+                            <p>Покрытие зубов ременилизирующим гелем. Снимает чувствительность, предотвращает развитие кариеса. </p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="sixth-block-conteiner">
-                <div class="sixth-block-text">
-                    <h3>Врачи</h3>
-                    <p>В нашей клинике работают высококлассные специалисты с большим опытом работы. Выберите подходящего врача и запишитесь на  консультацию.</p>
-                </div>
-                <div class="slider-and-card-wrapper">
-                    <div class="cards-part">
-                        <div id="dr-saidov">
-                            <img src="Image/IMG/saidov.png" alt="Саидов Шамсулло Нарзуллоевич">
-                            <div class="cards-wrapper-with-content">
-                                <div>
-                                    <span class="dr-name">Саидов Шамсулло Нарзуллоевич</span>
-                                    <span class="dr-position">Врач-стоматолог</span>
-                                    <span class="leading-specialist">Ведущий специалист</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="dr-anisimov">
-                            <img src="Image/IMG/anisimov.png" alt="Анисимов Дмитрий Владимирович">
-                            <div class="cards-wrapper-with-content">
-                                <div>
-                                    <span class="dr-name">Анисимов Дмитрий Владимирович</span>
-                                    <span class="dr-position">Врач-стоматолог</span>                                
-                                </div>
-                            </div>
-                        </div>
-                        <div id="dr-vardanyan">
-                            <img src="Image/IMG/vardanyan.png" alt="Варданян Давид Араевич">
-                            <div class="cards-wrapper-with-content">
-                                <div>
-                                    <span class="dr-name">Варданян Давид Араевич</span>
-                                    <span class="dr-position">Врач-стоматолог</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="dr-soha">
-                            <img src="Image/IMG/soha.png" alt="Соха Анастасия Юрьевна">
-                            <div class="cards-wrapper-with-content">
-                                <div>
-                                    <span class="dr-name">Соха Анастасия Юрьевна</span>
-                                    <span class="dr-position">Врач-стоматолог</span>                                                                        
-                                </div>
-                            </div>
-                        </div>
-                        <div id="dr-ivanova">
-                            <img src="Image/IMG/ivanova.png" alt="Иванова Оксана Григорьевна">
-                            <div class="cards-wrapper-with-content">
-                                <div>
-                                    <span class="dr-name">Иванова Оксана Григорьевна</span>
-                                    <span class="dr-position">Врач-стоматолог</span>                                   
-                                </div>
-                            </div>
-                        </div>
-                        <div id="dr-sinelshikova">
-                            <img src="Image/IMG/sinelshikova.png" alt="Синельщикова Елена Дмитриевна">
-                            <div class="cards-wrapper-with-content">
-                                <div>
-                                    <span class="dr-name">Синельщикова Елена Дмитриевна</span>
-                                    <span class="dr-position">Врач-стоматолог</span>                                    
-                                </div>
-                            </div>
-                        </div>
+                    <div class="massangers-with-text-in-component-fifth-block">
+                        <a href="#">
+                            <img src="Image/SVG/Telegram-mini.svg" alt="Telegram">
+                        </a>
+                        <a href="#">
+                            <img src="Image/SVG/WhatsApp-mini.svg" alt="What'sApp">
+                        </a>
+                        <p>
+                            спросить в мессенджере
+                        </p>
                     </div>
-                    <div class="sliders-part-wrapper">
-                        <button id="btn-prev-in-six-block" class="btn-prev-in-six-block"><img src="Image/SVG/btn-left.svg" alt="Назад" ></button>                        
-                        <div class="sliders-part">
-                            <div id="dr-saidov-info" class="slide-doc active">
-                                    <div class="text-content-in-six-block">
-                                        <span class="dr-name-in-slide">Саидов Шамсулло Нарзуллоевич</span>
-                                        <span class="dr-position-in-slide">Врач-стоматолог</span>
-                                        <span class="dr-saidov-option">Ведущий специалист</span>
-                                    </div>
-                                    <img class="dr-photo" src="Image/IMG/saidov-full.png" alt="Саидов Шамсулло Нарзуллоевич">
-                                    <div class="info-space-about-doctor">
-                                        <span>Опыт работы более 25 лет</span>
-                                        <p>
-                                            <b>Действующие сертификаты:</b><br>
-                                            стоматология ортопедическая;
-                                            стоматология хирургическая<br>
-                                            <b>Все виды высококачественного протезирования:</b> съемные,
-                                            несъемные, безметалловые конструкции, цирконий, проте-
-                                            зирование на имплантах, драгметаллах, вкладки, виниры, гнатология и хирургия
-                                        </p>
-                                    </div>
-                            </div>
-                            <div id="dr-anisimov-info" class="slide-doc">
-                                <div class="slide-doc-content">
-                                    <div class="text-content-in-six-block">
-                                        <span class="dr-name-in-slide">Анисимов Дмитрий Владимирович</span>
-                                        <span class="dr-position-in-slide">Врач-стоматолог</span>
-                                    </div>
-                                    <div class="info-space-about-doctor">
-                                        <span>Опыт работы более 5 лет</span>
-                                        <p>
-                                            <b>Действующие сертификаты:</b><br>
-                                            стоматология общей практики;
-                                            стоматология хирургическая<br>
-                                            <b>Направленность:</b> <br>
-                                            имплантация, пародонтология, удаление зубов любой сложности
-                                            </p>
-                                    </div>
-                                    <img class="dr-photo" src="Image/IMG/anisimov-full.png" alt="Анисимов Дмитрий Владимирович">
-                                </div>
-                            </div>
-                            <div id="dr-vardanyan-info" class="slide-doc">
-                                <div class="slide-doc-content">
-                                    <div class="text-content-in-six-block">
-                                        <span class="dr-name-in-slide">Варданян Давид Араевич</span>
-                                        <span class="dr-position-in-slide">Врач-стоматолог</span>
-                                    </div>
-                                    <div class="info-space-about-doctor">
-                                        <span>Опыт работы более 5 лет</span>
-                                        <p><b>Действующие сертификаты:</b><br>
-                                            стоматология общей практики;
-                                            стоматология хирургическая<br>
-                                            <b>Направленность:</b> <br>
-                                            протезирование зубов, хирургическое удаление, терапевтическое лечение и отбеливание
-                                            </p>
-                                    </div>
-                                    <img class="dr-photo" src="Image/IMG/vardanyan-full.png" alt="Варданян Давид Араевич">
-                                </div>
-                            </div>
-                            <div id="dr-soha-info" class="slide-doc">
-                                <div class="slide-doc-content">
-                                    <div class="text-content-in-six-block">
-                                        <span class="dr-name-in-slide">Соха Анастасия Юрьевна</span>
-                                        <span class="dr-position-in-slide">Врач-стоматолог</span>
-                                    </div>
-                                    <div class="info-space-about-doctor">
-                                        <span>Опыт работы более 10 лет</span>
-                                        <p>
-                                            <b>Действующие сертификаты:</b><br>
-                                            стоматология общей практики;
-                                            стоматология терапевтическая;  стоматология ортодонтическая
-                                            <br><b>Направленность:</b> <br>
-                                            терапевтическое лечение, эстетическая реставрация зубов и исправление прикуса любой сложности
-                                            </p>
-                                    </div>
-                                    <img class="dr-photo" src="Image/IMG/soha-full.png" alt="Соха Анастасия Юрьевна">
-                                </div>
-                            </div>
-                            <div id="dr-ivanova-info" class="slide-doc">
-                                <div class="slide-doc-content">
-                                    <div class="text-content-in-six-block">
-                                        <span class="dr-name-in-slide">Иванова Оксана Григорьевна</span>
-                                        <span class="dr-position-in-slide">Врач-стоматолог</span>
-                                    </div>
-                                    <div class="info-space-about-doctor">
-                                        <span>Опыт работы более 20 лет</span>
-                                        <p><b>Действующие сертификаты:</b><br>
-                                            стоматология общей практики;
-                                            стоматология ортопедическая<br>
-                                            <b>Направленность:</b> <br>
-                                            терапевтическое лечение, все виды протезирования, хирургическое удаление зубов
-                                            </p>
-                                    </div>
-                                    <img class="dr-photo" src="Image/IMG/ivanova-full.png" alt="Иванова Оксана Григорьевна">
-                                </div>
-                            </div>
-                            <div id="dr-sinelshikova-info" class="slide-doc">
-                                <div class="slide-doc-content">
-                                    <div class="text-content-in-six-block">
-                                        <span class="dr-name-in-slide">Синельщикова Елена Дмитриевна</span>
-                                        <span class="dr-position-in-slide">Врач-стоматолог</span>
-                                    </div>
-                                    <div class="info-space-about-doctor">
-                                        <span>Опыт работы более 5 лет</span>
-                                        <p><b>Действующие сертификаты:</b><br>
-                                            стоматология общей практики;
-                                            стоматология хирургическая<br>
-                                            <b>Направленность:</b> <br>
-                                            терапевтическое лечение, эстетическая реставрация, хирургическое удаление зубов , профессиональная гигиена и отбеливание
-                                            </p>
-                                    </div>
-                                    <img class="dr-photo" src="Image/IMG/sinelshikova-full.png" alt="Синельщикова Елена Дмитриевна">
-                                </div>
-                            </div>
-                            <button class="btn-appointment-in-six-block">Записаться</button>
-                        </div>
+                    <div class="buttons-in-fifth-second-part-block">
+                        <button id="btn-appointment-window-in-fifth-block">Записаться</button>
+                        <button id="btn-choose-doctor-window-in-fifth-block"><a href="">Выбрать врача</a></button>
                     </div>
-                    <button id="btn-next-in-six-block" class="btn-next-in-six-block"><img src="image/SVG/btn-right.svg" alt="Вперёд" width="40px" height="40px"></button>
                 </div>
             </div>
         </div>
